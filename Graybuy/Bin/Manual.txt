@@ -1,6 +1,7 @@
 1. Install XAMPP server
 2. Create a database called graybuydatabase
 3. Create a table called users, ID as Auto Incremement, Username and Password as text
-4. Create a table called orders, Order ID Product ID, Product Amount, Product Price
+4. Create a table called products with ID as Auto Increment, Name, Price, Image
 Note there is no autoincrement for OrderID it is done manually.
-5. Double click on StartClient.bat, this starts the local client.
+5. Start XAAMP Server
+6. Double click on StartClient.bat, this starts the local client.
