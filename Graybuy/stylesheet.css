@@ -1,0 +1,60 @@
+table, th, td{
+border-spacing: 3px;
+border: 2px solid;
+border-collapse: separate;
+padding: 5px;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+
+
+body {
+background-color: lightgrey;
+justify-content: center;
+}
+
+}
+td {
+padding: 0.6;
+
+}
+.graybox{
+width: 40%;
+text-align: center;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+.middlebox{
+text-align: center;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+
+}
+
+
+
+
+
+
+
+button{
+width: 110px;
+height: 70px;
+
+}
+.button{
+width: 110px;
+height: 70px;
+
+}
+
+submit{
+width: 100px;
+height: 50px;
+
+}

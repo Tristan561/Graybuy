@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet" type="text/css" href = "stylesheet.css">
+</head>
+
+<body>
+<table>
+<tr>
+<?php
+if(session_status() == PHP_SESSION_NONE){ //to suppress duplicate error message on this module if other modules are used and use session start too.
+	session_start();
+}
+if(isset ($_SESSION["username"])){
+if($_SESSION["username"] != null){
+
+echo "You are logged in as: " . $_SESSION["username"];
+
+}
+
+}
+else{
+echo "You are not currently logged in.";
+}
+
+
+?>
+<div class = "graybox">
+</tr>
+<tr>
+<th>
+<?php include 'ToDashboardButton.html';?>
+</th>
+<th>
+<input type = "button" value = "Customer Listings" onclick = "location.href = 'ShoppingScreen.php' "class = "button"><br><br>
+</th>
+<th>
+<input type = "button" value = "Login" onclick = "location.href = 'Login.php' " class = "button"><br><br>
+</th>
+<th>
+<input type = "button" value = "Register" onclick = "location.href = 'Register.php' " class = "button"><br><br>
+</th>
+
+<th id = "topbaruac">
+
+
+</th>
+<th id = "topbarmanage">
+
+
+</th>
+
+
+</tr>
+
+
+</table>
+<script>// GeeksforGeeks credit for dyanmic button creation script.
+var username = "<?php echo $_SESSION["username"]?>";
+if(username == "Admin"){
+var uacbutton = document.createElement('BUTTON');
+var productmanagebutton = document.createElement('BUTTON');
+
+uacbutton.innerHTML = "User Access Control";
+productmanagebutton.innerHTML = "Product Management";
+
+var topbaruac = document.getElementById("topbaruac");
+var topbarmanage = document.getElementById("topbarmanage");
+topbaruac.appendChild(uacbutton);
+topbarmanage.appendChild(productmanagebutton);
+uacbutton.classList.add("Button");
+
+uacbutton.onclick = function(){window.location.href = "Usermanagement.php"};
+productmanagebutton.onclick = function(){window.location.href = "Productmanagement.php"};
+}
+
+
+</script><br><br>
+</body>
+</div>
+</html>
