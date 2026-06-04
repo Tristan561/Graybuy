@@ -18,9 +18,6 @@ Payment
 <label for = "username">DeliveryAddress:</label><br>
 <input type = "text" name = "DeliveryAddress" id = "username"><br><br>
 
-<label for = "username">Username:</label><br>
-<input type = "text" name = "username" id = "username"><br><br><br>
-
 <input type = "Button" value = "Pay" onclick = "thank()" class = "button"><br><br>
 
 <script>
