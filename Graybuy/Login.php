@@ -78,6 +78,7 @@ else{
 </head>
 <body>
 <?php include 'Components/Topbar.html'; ?> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href = "stylesheet.css">
 <form action = "Login.php" method = "post" class = "graybox">
 

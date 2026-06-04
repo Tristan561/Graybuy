@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <div class = "graybox">
 <link rel="stylesheet" href = "stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
 
 </head>
@@ -44,8 +46,8 @@ Amount:
 	var cell_0;
 	var cell_1;
 	var cell_2;
-	
-	cartitemstorage.forEach(function (cartitem) {
+	if(cartitemstorage != null){
+		cartitemstorage.forEach(function (cartitem) {
 		newrow = carttable.insertRow(rowsize);
 		cell_0 = newrow.insertCell(0);
 		cell_1 = newrow.insertCell(1);
@@ -62,6 +64,8 @@ Amount:
 	cell_3.innerHTML = "Total: ";
 	var cell_4 = newrow.insertCell(1);
 	cell_4.innerHTML = "R " + sessionStorage.getItem("carttotal");
+	}
+
 
 </script>
 <script>

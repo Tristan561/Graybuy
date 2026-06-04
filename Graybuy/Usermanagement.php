@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<div class = "graybox">
+<div class = "graybox
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php include 'Components/Topbar.html';?>
 
 <title> User Management </title>

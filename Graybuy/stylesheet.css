@@ -21,11 +21,9 @@ padding: 0.6;
 
 }
 .graybox{
-width: 40%;
 text-align: center;
 align-items: center;
 justify-content: center;
-text-align: center;
 
 .middlebox{
 text-align: center;
@@ -35,12 +33,6 @@ text-align: center;
 
 
 }
-
-
-
-
-
-
 
 button{
 width: 110px;
